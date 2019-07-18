@@ -19,7 +19,7 @@ Prints all supported commands.
 
 ## Calendar commands
 
-Allows to watch for events of a Zimbra Calendar, and show event notifications.
+Allows to watch for events of a Zimbra Calendar, and to show event notifications.
 
 ## !zimbra cal help
 Prints the help message on 'calendar' commands.
