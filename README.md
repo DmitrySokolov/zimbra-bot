@@ -6,7 +6,7 @@ Discord bot for Zimbra server.
 * install packages: `cd zimbra-bot && npm install`
 
 ## Run
-* [Create Discord bot and get a token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+* [create Discord bot and get a token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 * create the `.env` file, and put the string `BOT_TOKEN={your token here}` into it
 * run `npm start`
 
@@ -14,47 +14,47 @@ Discord bot for Zimbra server.
 # Supported commands
 
 ## !zimbra help
-Prints all supported commands
+Prints all supported commands.
 
 
 ## Calendar commands
 
-Allows to watch a Zimbra Calendar events, and show event notifications.
+Allows to watch for events of a Zimbra Calendar, and show event notifications.
 
 ## !zimbra cal help
-Prints help on 'calendar' commands
+Prints the help message on 'calendar' commands.
 
 ## !zimbra cal list
-Prints all watched calendars
+Prints all watched calendars.
 
 ## !zimbra cal watch {name} {url} {auth_token}
-Add the calendar to the watch list
+Add the calendar to the watch list:
 * url - calendar URL
 * auth_token - Zimbra auth token ([ZM_AUTH_TOKEN](https://wiki.zimbra.com/wiki/Zimbra_REST_API_Reference#Authentication))
 
 ## !zimbra cal unwatch {name}
-Remove the calendar from the watch list
+Remove the calendar from the watch list:
 * url - calendar URL
 
 ## !zimbra cal events
-Prints upcoming events
+Prints upcoming events.
 
 
 # Tuning
 
 ## `index.js`
-* `const prefix = '!zimbra'` - commands prefix.
+* `const prefix = '!zimbra'` - commands prefix
 
 ## `commands/cal.js`
-* `const checkDbTimeout = 10000` - timeout to check DB changes (10 sec), re-reads DB only if `env.CAL_CHANGED` var is set;
-* `const checkURLsTimeout = 120000` - timeout to check a calendar URL (120 sec).
+* `const checkDbTimeout = 10000` - timeout to check DB changes (10 sec), re-reads DB only if `env.CAL_CHANGED` var is set
+* `const checkURLsTimeout = 120000` - timeout to check a calendar URL (120 sec)
 
 ## Event notifications
 
 The simple event notification consists of:
-* Title
-* Description
-* Image URL
+* title
+* description
+* image URL
 
 ![Simple event notification](./docs/simple_event.png)
 
